@@ -1,0 +1,95 @@
+/* VINTAGE FUNKY STYLES WITHOUT FLOATING OBJECTS */
+
+body.vintage-body {
+    background: linear-gradient(to bottom, #fdf6e3, #ffe4c4);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  /* Main app container */
+  .container {
+    max-width: 650px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: rgba(255, 250, 230, 0.95);
+    border: 3px dotted #cd853f;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    animation: popIn 1s ease;
+  }
+  
+  .vintage-title {
+    color: #5b341e;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #ffe1c9;
+    animation: slideDown 1s;
+  }
+  
+  .vintage-input {
+    padding: 12px;
+    width: 65%;
+    font-size: 1rem;
+    border: 2px solid #b5651d;
+    border-radius: 8px;
+    background-color: #fdf6e3;
+    margin-right: 10px;
+  }
+  
+  .vintage-button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: #cd853f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .vintage-button:hover {
+    background-color: #b5651d;
+    transform: scale(1.08) rotate(-3deg);
+  }
+  
+  .college-list {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-top: 25px;
+    text-align: left;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .college-list li {
+    font-size: 1.1rem;
+    color: #4b2e19;
+    margin-bottom: 10px;
+    transition: transform 0.3s, color 0.3s;
+    cursor: pointer;
+  }
+  
+  .college-list li:hover {
+    color: #8b0000;
+    transform: translateX(15px);
+  }
+  
+  /* Animations */
+  @keyframes popIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  @keyframes slideDown {
+    from { transform: translateY(-30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes fadeInUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vintage College Finder</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+<body class="vintage-body">
+  <!-- Animated Background Elements -->
+  <div class="animated-background">
+    <img src="images/book.png" class="floating book" alt="Book" />
+    <img src="images/cap.png" class="floating cap" alt="Graduation Cap" />
+    <img src="images/pencil.png" class="floating pencil" alt="Pencil" />
+  </div>
+
+  <div class="container">
+    <h1 class="vintage-title">🎓 Discover Cool Colleges 🌍</h1>
+    
+    <input class="vintage-input" type="text" placeholder="Enter country name" />
+    <button class="vintage-button">Find Colleges</button>
+
+    <ul class="college-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
